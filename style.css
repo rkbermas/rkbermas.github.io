@@ -61,6 +61,9 @@ body {
 .blog-part:not(:last-child) {
   border-right: 1px solid #94918f;
 }
+.blog-part a:hover {
+  text-decoration: underline;
+}
 .blog-menu {
   font-size: 22px;
   text-decoration: none;
@@ -451,3 +454,5 @@ marquee span:before {
     text-align: left; /* Justify text alignment */
     letter-spacing: 0.5px; /* Add slight spacing between letters */
   }
+
+  

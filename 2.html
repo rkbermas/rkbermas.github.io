@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="single-work-style.css">
+    <title>Predicting Depression</title>
+</head>
+<body>
+
+<div class="blog">
+    <!-- Sidebar -->
+    <div class="blog-part">
+        <a href="index.html">Home 
+        <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M7 7h10v10" />
+        </svg></a>
+        <a href="dsmlWorks.html">Works</a>
+        <a href="publications.html">Publications</a>
+        <a href="notes.html">Notes</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-area">
+        <div class="blog-header">
+            <div class="blog-big__title">Predicting Depression in Students Using Machine Learning</div>
+        </div>
+
+        <div class="blog-detail">
+        
+            <strong>Authors:</strong> Ronnel Bermas, Justine Evora, and Christine Sotoza </h2> <br>
+        </div>
+
+        <div class="blog-article">
+            <br>
+            <img src="https://images.unsplash.com/photo-1439902315629-cd882022cea0?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bioactivity ML">
+            <p>
+                This app processes student mental health survey data and builds machine learning models to predict whether a student is likely to have depression. It employs K-Nearest Neighbors (KNN) and Decision Tree algorithms for classification.
+            </p>
+
+            </ul>
+            <p>For additional details and data, please visit the project repository.</p>
+            <a href="https://github.com/christinuhhh/CSCI-111-Project">View Repository</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Update current date
+    function updateDate() {
+        const today = new Date();
+        const formattedDate = `Date Today: ${today.getDate()}.${today.getMonth() + 1}.${today.getFullYear()}`;
+        document.getElementById('currentDate').textContent = formattedDate;
+    }
+    updateDate();
+</script>
+
+</body>
+</html>

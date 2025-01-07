@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="single-work-style.css">
+    <title>Predicting Bioactivity</title>
+</head>
+<body>
+
+<div class="blog">
+    <!-- Sidebar -->
+    <div class="blog-part">
+        <a href="index.html">Home 
+        <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M7 7h10v10" />
+        </svg></a>
+        <a href="dsmlWorks.html">Works</a>
+        <a href="publications.html">Publications</a>
+        <a href="notes.html">Notes</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-area">
+        <div class="blog-header">
+            <div class="blog-big__title">Predicting the Bioactivity of Compounds Targeting SARS-CoV-2 Using Machine Learning</div>
+        </div>
+
+        <div class="blog-detail">
+        
+            <strong>Authors:</strong> Ronnel Bermas, John Asis, and Janna Reyes </h2> <br>
+        </div>
+
+        <div class="blog-article">
+            <br>
+            <img src="https://plus.unsplash.com/premium_photo-1674850275054-88765f04a2b3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bioactivity ML">
+            <p>
+                The COVID-19 pandemic has underscored the need for effective treatments. In this study, the researchers explore the application of machine learning (ML) to predict the bioactivity of chemical compounds targeting the SARS-CoV-2 3C-like protease (3CLpro), an enzyme essential for viral replication. Using molecular descriptors and chemical fingerprints as inputs, the researchers train and evaluate several ML models, including K-Nearest Neighbors (KNN) Regression, Linear Regression, Decision Tree Regression, Random Forest Regression, and Neural Networks. The results show that Random Forest Regression provided the most accurate predictions, with the lowest Mean Squared Error (MSE), Mean Absolute Error (MAE), and the highest R², suggesting that it can be used best to predict the bioactivity of compounds and aid in the identification of candidates for further experimental testing.
+            </p>
+
+            </ul>
+            <p>For additional details and data, please visit the project repository.</p>
+            <a href="https://github.com/rkbermas/CSCI117-Final">View Repository</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Update current date
+    function updateDate() {
+        const today = new Date();
+        const formattedDate = `Date Today: ${today.getDate()}.${today.getMonth() + 1}.${today.getFullYear()}`;
+        document.getElementById('currentDate').textContent = formattedDate;
+    }
+    updateDate();
+</script>
+
+</body>
+</html>

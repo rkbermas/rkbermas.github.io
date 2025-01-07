@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="works-style.css">
+    <title>Publications</title>
+</head>
+<body>
+
+<div class="blog">
+    <!-- Sidebar -->
+    <div class="blog-part">
+        <a href="index.html">Home 
+        <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M7 7h10v10" />
+        </svg></a>
+        <a href="dsmlWorks.html">Works</a>
+        <a href="notes.html">Notes</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-area">
+        <div class="blog-header">
+            <div class="blog-big__title">Publications</div>
+            <div class="date" id="currentDate"></div>
+        </div>
+
+        <!-- Publication 1 -->
+        <div class="blog-article">
+            <img src="https://i.pinimg.com/736x/c3/c1/c9/c3c1c995143c8750dc02db4cd412d0bd.jpg" alt="OMORI Analysis">
+            <h2>A Place to Survive: <span>OMORI</span> Through Bronfenbrenner’s Ecological Systems Theory</h2>
+            <div class="blog-detail">By Ronnel Bermas, Jenelle Capati, and Francis Calubayan</div>
+            <p>
+                This research analyzes the narrative of the role-playing game OMORI using Bronfenbrenner's Ecological Systems Theory, exploring how external factors like family, societal norms, and culture shape character development.
+            </p>
+            <a href="http://press-start.gla.ac.uk/index.php/press-start/article/view/314">View Details</a>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="blog-article">
+            <img src="https://images.unsplash.com/photo-1514108225820-2b602873ac36?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sovereign Fund Analysis">
+            <h2>Invested interests, '<span>sovereign</span>' fund</h2>
+            <div class="blog-detail">By Felicity C. Santos and Ronnel Bermas</div>
+            <p>
+                In an attempt to salvage the Philippine economy, President Ferdinand Marcos Jr. signed Republic Act No. 11954 or the Maharlika Investment Fund (MIF) Act. Under RA 11954, the administration will use the income from investments to support its economic goals via financial instruments, joint ventures, and high-impact infrastructure projects. Among other goals, the creation of the MIF is projected to grow national wealth, create jobs, and achieve food security.            </p>
+            <a href="https://theguidon.com/2023/09/invested-interests-sovereign-fund/">View Details</a>
+        </div>
+
+
+        <!-- Publication 3 -->
+        <div class="blog-article">
+            <img src="https://images.unsplash.com/photo-1571834870678-24294e1ecf72?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cha-cha 4 Afam">
+            <h2>Cha-cha for <span>AFAM?</span>: Foreign ownership in higher education through charter change</h2>
+            <div class="blog-detail">By Ronnel Bermas, Raekint F. Corpuz and Allen P. Gacutan</div>
+            <p>
+                With the recent approval of the Resolution of Both Houses (RBH) No. 7 in the House of Representatives, certain sections of the 1987 Constitution are under consideration for amendments in a bid to increase foreign direct investments (FDI) in the country. </p>           
+                <a href="https://theguidon.com/2024/05/cha-cha-for-afam-foreign-ownership-in-higher-education-through-charter-change/">View Details</a>
+        </div>
+
+
+        <!-- Publication 4 -->
+        <div class="blog-article">
+            <img src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Free Tuition"><br>
+            <h2>Free <span>tuition</span> by merit</h2>
+            <div class="blog-detail">By Ronnel Bermas and Julia Uy</div>
+            <p>
+                Free tuition for college students has been successful with millions of beneficiaries since 2017. However, Finance Secretary Benjamin Diokno argues that the program’s current structure has not effectively targeted economically disadvantaged students. </p>               
+                <a href="https://theguidon.com/2023/12/free-tuition-by-merit/">View Details</a>
+        </div>
+
+        <!-- Publication 5 -->
+        <div class="blog-article">
+            <img src=https://images.unsplash.com/photo-1451481454041-104482d8e284?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="4Ps"><br>
+            <h2>The current <span>status</span> of 4Ps in the Philippines</h2>
+            <div class="blog-detail">By Ronnel Bermas and Alekxie Castaños</div>
+            <p>
+                Aiming to enhance the well-being of children aged 0 to 18, the Pantawid Pamilyang Pilipino Program (4Ps) has benefitted 5,220,953 poor families in its 16 years of implementation. The program has also been noted to be a contributing factor to the decline in the Philippines’ poverty incidence from 25.2% in 2012 to 16.6% in 2018. </p>               
+                <a href="https://theguidon.com/2024/03/the-current-status-of-4ps-in-the-philippines/">View Details</a>
+        </div>
+
+<script>
+    // Update current date
+    function updateDate() {
+        const today = new Date();
+        const formattedDate = `Date Today: ${today.getDate()}.${today.getMonth() + 1}.${today.getFullYear()}`;
+        document.getElementById('currentDate').textContent = formattedDate;
+    }
+    updateDate();
+</script>
+
+</body>
+</html>

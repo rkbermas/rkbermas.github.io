@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="works-style.css">
+    <title>Notes</title>
+</head>
+<body>
+
+<div class="blog">
+    <!-- Sidebar -->
+    <div class="blog-part">
+        <a href="index.html">Home 
+        <svg fill="none" stroke="currentColor" stroke-width=".7" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M7 7h10v10" />
+        </svg></a>
+        <a href="dsmlWorks.html">Works</a>
+        <a href="publications.html">Publications</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-area">
+        <div class="blog-header">
+            <div class="blog-big__title">Notes</div>
+            <div class="date" id="currentDate"></div>
+        </div>
+
+        <!-- Placeholder for notes -->
+        <div class="blog-article">
+            <h2>Nothing to see here <span>Yet</span></h2>
+            <p>
+                I shall be publishing something soon! Stay tuned for updates.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Update current date
+    function updateDate() {
+        const today = new Date();
+        const formattedDate = `Date Today: ${today.getDate()}.${today.getMonth() + 1}.${today.getFullYear()}`;
+        document.getElementById('currentDate').textContent = formattedDate;
+    }
+    updateDate();
+</script>
+
+</body>
+</html>

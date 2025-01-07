@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  background-color: #121418;
+  color: #161419;
+  height: 100%;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: 15% auto;
+  height: 100vh;
+  background-color: #e9e6e4; /* White background */
+}
+
+.blog-part {
+  background-color: #e9e6e4; /* Match the content background */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #94918f; /* Black divider line */
+}
+
+.blog-part a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #161419;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-part a svg {
+    width: 16px; /* Smaller arrow size */
+    height: 16px;
+}
+
+.blog-part a:hover {
+  text-decoration: underline;
+}
+
+.content-area {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.blog-header {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #94918f; /* Black divider for header */
+  padding-bottom: 10px;
+}
+
+.blog-big__title {
+  font-size: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #121418;
+}
+
+.blog-detail h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #161419;
+}
+
+.blog-article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog-article p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-article ul {
+  margin: 10px 0 20px 20px;
+  list-style: disc;
+}
+
+.blog-article ul li {
+  margin-bottom: 8px;
+}
+
+.blog-article a {
+  color: #161419;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-article a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .blog {
+    grid-template-columns: 100%;
+  }
+
+  .blog-part {
+    display: none;
+  }
+}
