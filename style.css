@@ -127,13 +127,23 @@ body {
   }
 }
 .blog-big__title {
-  font-size: 132px;
+  font-size: 100px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   letter-spacing: -5px;
   line-height: 1;
   margin-bottom: 6px;
 }
+
+.blog-ok__title {
+    font-size: 132px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
 @media screen and (max-width: 1400px) {
   .blog-big__title {
     font-size: 120px;
@@ -152,8 +162,12 @@ body {
   }
 }
 .blog-header {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between elements */
+    padding: 20px;
+    height: 100%; /* Ensure it takes full height */
+    overflow: hidden; /* Prevent overflow */
 }
 .blog-article {
   padding: 0 20px;
@@ -170,13 +184,14 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  font-size: 72px;
+  font-size: 66px;
   text-align: center;
   letter-spacing: -3px;
   font-weight: lighter;
   font-family: "Space Grotesk", sans-serif;
   border-right: 1px solid #94918f;
   white-space: nowrap;
+  overflow: hidden; /* Prevent overflow */
 }
 @media screen and (max-width: 1260px) {
   .page-number {
@@ -188,9 +203,14 @@ body {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+.small-titleNote {
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 @media screen and (max-width: 560px) {
   .small-title {
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     top: 10px;
     right: 24px;
@@ -418,4 +438,16 @@ marquee span:before {
     margin: 0;
     padding: 0;
     overflow: hidden;
+  }
+  .note-content {
+    font-size: 14;
+    line-height: 1.5;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    height: 100%; /* Take up remaining space */
+    padding-right: 10px; /* Add padding for scrollbar */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words if necessary */
+    text-align: left; /* Justify text alignment */
+    letter-spacing: 0.5px; /* Add slight spacing between letters */
   }
