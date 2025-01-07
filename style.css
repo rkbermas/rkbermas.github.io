@@ -1,0 +1,58 @@
+.blog-header-container {
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    .blog-header {
+      padding: 20px 0;
+      border-bottom: 1px solid $border-color;
+  
+      .blog-big__title {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+  
+      .blog-article {
+        display: flex;
+        flex-direction: column;
+  
+        img {
+          max-width: 100%;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+  
+        h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          span {
+            color: $subtitle-color;
+          }
+        }
+  
+        p {
+          margin-bottom: 20px;
+          line-height: 1.6;
+        }
+  
+        a {
+          align-self: flex-end;
+          text-decoration: none;
+          color: $subtitle-color;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+  
+          svg {
+            margin-left: 8px;
+          }
+  
+          &:hover {
+            color: $title-color;
+          }
+        }
+      }
+    }
+  }
+  
